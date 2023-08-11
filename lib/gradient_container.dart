@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice/roll_dice.dart';
 import 'package:roll_dice/text_to.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  void rollDice() {}
 
   // This widget is the root of your application.
   @override
@@ -16,7 +19,9 @@ class MyApp extends StatelessWidget {
               Color.fromARGB(255, 7, 9, 116),
             ], begin: Alignment.topLeft, end: Alignment.bottomRight),
           ),
-          child: TextTo('Hey Nitin kumar'),
+          child: Center(
+            child: DiceRoller(),
+          ),
         ),
       ),
     );
